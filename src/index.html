@@ -5,8 +5,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" type="text/css" href="./css/style.css"/>
-  <script type="module" src="./js/index.js"></script>
-  <title> L1 </title>
+  <script src="./js/index.js"></script>
+  <title> W1 </title>
 </head>
 
 <body>
@@ -14,20 +14,23 @@
 
   <div class="game">
     <div class="row">
-      <input type="text" class="box" readonly>
-      <input type="text" class="box" readonly>
-      <input type="text" class="box" readonly>
+      <input type="text" class="box" id="one" onclick="boxClick1(), isWinner()" readonly>
+      <input type="text" class="box" id="two" onclick="boxClick2(), isWinner()" readonly>
+      <input type="text" class="box" id="three" onclick="boxClick3(), isWinner()" readonly>
     </div>
     <div class="row">
-      <input type="text" class="box" readonly>
-      <input type="text" class="box" readonly>
-      <input type="text" class="box" readonly>
+      <input type="text" class="box" id="four" onclick="boxClick4(), isWinner()" readonly>
+      <input type="text" class="box" id="five" onclick="boxClick5(), isWinner()" readonly>
+      <input type="text" class="box" id="six" onclick="boxClick6(), isWinner()" readonly>
     </div>
     <div class="row">
-      <input type="text" class="box" readonly>
-      <input type="text" class="box" readonly>
-      <input type="text" class="box" readonly>
+      <input type="text" class="box" id="seven" onclick="boxClick7(), isWinner()" readonly>
+      <input type="text" class="box" id="eight" onclick="boxClick8(), isWinner()" readonly>
+      <input type="text" class="box" id="nine" onclick="boxClick9(), isWinner()" readonly>
     </div>
+
+    <div>
+      <button class="start" onclick="startGame()">Start game</button>
   </div>
 </body>
 </html>
